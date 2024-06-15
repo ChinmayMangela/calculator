@@ -5,3 +5,4 @@
 *.ruby linguist-lang=ignored
 *.html linguist-lang=ignored
 *.swift linguist-lang=ignored
+src/**/*.dart linguist-language=dart
