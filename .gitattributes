@@ -1,8 +1,8 @@
 
-*.txt linguist-lang=ignored
-*.cpp linguist-lang=ignored
-*.c linguist-lang=ignored
-*.ruby linguist-lang=ignored
-*.html linguist-lang=ignored
-*.swift linguist-lang=ignored
-src/**/*.dart linguist-language=dart
+*.txt linguist-detectable = false
+*.cpp linguist-detectable = false
+*.c linguist-detectable = false
+*.ruby linguist-detectable = false
+*.html linguist-detectable = false
+*.swift linguist-detectable = false
+src/**/*.dart linguist-language = dart
