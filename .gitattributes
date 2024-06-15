@@ -1,0 +1,7 @@
+
+*.txt linguist-lang=ignored
+*.cpp linguist-lang=ignored
+*.c linguist-lang=ignored
+*.ruby linguist-lang=ignored
+*.html linguist-lang=ignored
+*.swift linguist-lang=ignored
