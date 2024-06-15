@@ -1,8 +1,8 @@
 
-*.txt linguist-detectable=false
 *.cpp linguist-detectable=false
+*.txt linguist-detectable=false
 *.c linguist-detectable=false
-*.ruby linguist-detectable=false
+*.rb linguist-detectable=false
 *.html linguist-detectable=false
 *.swift linguist-detectable=false
 *.cmake linguist-detectable=false
