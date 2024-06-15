@@ -21,5 +21,4 @@ Package Integration:
 
 # Output screenshots 
 
-![Simulator Screenshot - iPhone 15 Pro Max - 2024-06-15 at 22 08 03](https://github.com/ChinmayMangela/calculator/assets/116483169/849c0c72-ec02-49ec-9e48-046ba1c2204f)
-![Simulator Screenshot - iPhone 15 Pro Max - 2024-06-15 at 22 08 07](https://github.com/ChinmayMangela/calculator/assets/116483169/07cbef64-18a1-4107-98dc-0ea0ff9e0941)
+![Simulator Screenshot - iPhone 15 Pro Max - 2024-06-15 at 22 08 03](https://github.com/ChinmayMangela/calculator/assets/116483169/849c0c72-ec02-49ec-9e48-046ba1c2204f)![Simulator Screenshot - iPhone 15 Pro Max - 2024-06-15 at 22 08 07](https://github.com/ChinmayMangela/calculator/assets/116483169/07cbef64-18a1-4107-98dc-0ea0ff9e0941)
