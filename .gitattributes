@@ -5,4 +5,6 @@
 *.ruby linguist-detectable=false
 *.html linguist-detectable=false
 *.swift linguist-detectable=false
+*.cmake linguist-detectable=false
+*.kt linguist-detectable=false
 src/**/*.dart linguist-language=dart
