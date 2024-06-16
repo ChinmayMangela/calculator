@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:calculator_app/widgets/calculator_buttons_grid.dart';
 import 'package:calculator_app/widgets/result_container.dart';
 import 'package:flutter/material.dart';

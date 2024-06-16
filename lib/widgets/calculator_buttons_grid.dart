@@ -20,10 +20,9 @@ class CalculatorButtonsGrid extends StatelessWidget {
         context.read<CalculatorButtonTextsProvider>().buttonTexts;
     return Container(
       width: double.infinity,
-      // height: screenHeight * 0.65,
-      margin: const EdgeInsets.all(8),
+      margin: const EdgeInsets.fromLTRB(10, 0, 10, 10),
       child: GridView.builder(
-        physics: const NeverScrollableScrollPhysics(),
+        physics: const ClampingScrollPhysics(),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 4,
         ),
