@@ -30,14 +30,13 @@ class ResultContainer extends StatelessWidget {
           ),
           SingleChildScrollView(
               scrollDirection: Axis.horizontal,
-              child: BuildText(text: expression, isBoldFont: false, textSize: 30)),
+              child: BuildText(text: expression, isBoldFont: false, textSize: screenHeight * 0.03)),
           SizedBox(
             height: screenHeight * 0.01,
           ),
           SingleChildScrollView(
               scrollDirection: Axis.horizontal,
-              child: BuildText(text: answer, isBoldFont: false, textSize: 40)),
-
+              child: BuildText(text: answer, isBoldFont: false, textSize: screenHeight * 0.045)),
         ],
       ),
     );
@@ -55,4 +54,6 @@ class ResultContainer extends StatelessWidget {
           : Theme.of(context).colorScheme.errorContainer,
     );
   }
+
+
 }
