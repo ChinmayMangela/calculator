@@ -27,11 +27,15 @@ class _HomeScreenState extends State<HomeScreen> {
       BuildContext context, double screenHeight, Brightness brightness) {
     return Column(
       children: [
-        ResultContainer(
-          expression: _expression,
-          answer: _result,
+        Expanded(
+          child: ResultContainer(
+            expression: _expression,
+            answer: _result,
+          ),
         ),
-        CalculatorButtonsGrid(onButtonTap: _handleButtonTap)
+        Expanded(
+          flex: 2,
+          child: CalculatorButtonsGrid(onButtonTap: _handleButtonTap),),
       ],
     );
   }

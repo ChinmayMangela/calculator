@@ -14,32 +14,29 @@ class CalculatorButtonsGrid extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height;
     final buttonTextProvider =
     Provider.of<CalculatorButtonTextsProvider>(context);
     List<String> btnText =
         context.read<CalculatorButtonTextsProvider>().buttonTexts;
-    return Expanded(
-      child: Container(
-        width: double.infinity,
-        height: screenHeight * 0.65,
-        margin: const EdgeInsets.all(8),
-        child: GridView.builder(
-
-          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 4,
-          ),
-          itemCount: btnText.length,
-          itemBuilder: (context, index) {
-            String currentButtonText = buttonTextProvider.buttonTexts[index];
-            return MyButton(
-              onButtonTap: () {
-                onButtonTap(currentButtonText);
-              },
-              btnText: currentButtonText,
-            );
-          },
+    return Container(
+      width: double.infinity,
+      // height: screenHeight * 0.65,
+      margin: const EdgeInsets.all(8),
+      child: GridView.builder(
+        physics: const NeverScrollableScrollPhysics(),
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 4,
         ),
+        itemCount: btnText.length,
+        itemBuilder: (context, index) {
+          String currentButtonText = buttonTextProvider.buttonTexts[index];
+          return MyButton(
+            onButtonTap: () {
+              onButtonTap(currentButtonText);
+            },
+            btnText: currentButtonText,
+          );
+        },
       ),
     );
   }

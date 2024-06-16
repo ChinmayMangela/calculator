@@ -19,14 +19,14 @@ class ResultContainer extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 20),
       decoration: _resultContainerStyling(context),
       width: double.infinity,
-      height: screenHeight * 0.35,
+      // height: screenHeight * 0.35,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
           SizedBox(height: screenHeight * 0.05),
           const ThemeChangerButton(),
           SizedBox(
-            height: screenHeight * 0.07,
+            height: screenHeight * 0.04,
           ),
           SingleChildScrollView(
               scrollDirection: Axis.horizontal,
@@ -36,7 +36,7 @@ class ResultContainer extends StatelessWidget {
           ),
           SingleChildScrollView(
               scrollDirection: Axis.horizontal,
-              child: BuildText(text: answer, isBoldFont: false, textSize: screenHeight * 0.045)),
+              child: BuildText(text: answer, isBoldFont: false, textSize: screenHeight * 0.05)),
         ],
       ),
     );

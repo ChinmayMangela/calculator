@@ -15,18 +15,13 @@ class MyButton extends StatelessWidget {
   Widget build(BuildContext context) {
     final btnColor = getButtonTextColor(btnText, context);
     final screenWidth = MediaQuery.of(context).size.width;
-    final screenHeight = MediaQuery.of(context).size.height;
-    final marginFromLeftRightAndTop = screenHeight * 0.01;
     return GestureDetector(
       onTap: () {
         onButtonTap();
       },
       child: Container(
-        margin: EdgeInsets.fromLTRB(marginFromLeftRightAndTop, 2,
-            marginFromLeftRightAndTop, marginFromLeftRightAndTop),
+        margin: EdgeInsets.symmetric(horizontal: screenWidth * 0.01),
         alignment: Alignment.center,
-        width: screenWidth * 0.08,
-        height: screenHeight * 0.08,
         decoration: BoxDecoration(
           color: btnColor,
           shape: BoxShape.circle,
